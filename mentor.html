@@ -61,7 +61,7 @@
 
             <div class="collapse navbar-collapse text-center" id="navbarMenu">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
@@ -73,9 +73,12 @@
                     <li class="nav-item">
                         <a href="portfolio.html" class="nav-link">Portfolio</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
                 </ul>
                 <form class="form-lg-inline my-2 my-md-0 ml-lg-4 text-center">
-                    <a href="contact.html" class="btn btn-solid-border btn-round-full">Contact</a>
+                    <button type="button" class="btn btn-solid-border btn-round-full" data-toggle="modal" data-target="#modalTeamName">Contact</button>
                 </form>
             </div>
 
@@ -356,6 +359,45 @@
         </div>
     </section>
     <!-- Footer End -->
+
+    <!-- Modal Nama Kelompok Start -->
+    <div class="modal fade" id="modalTeamName" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Nama Kolompok</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                        <tr>
+                            <td style="font-weight: bold !important;">Nama</td>
+                            <td style="font-weight: bold !important;">NIM</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Ahmad Hemdi</td>
+                            <td>200401010076</td>
+                        </tr>
+                        <tr>
+                            <td>Wahyu Ardiyantono</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Yuswa</td>
+                            <td>200401010098</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Nama Kelompok End -->
 
 </div>
 
