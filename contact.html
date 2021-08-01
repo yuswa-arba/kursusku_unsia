@@ -78,7 +78,7 @@
                     </li>
                 </ul>
                 <form class="form-lg-inline my-2 my-md-0 ml-lg-4 text-center">
-                    <button type="button" class="btn btn-solid-border btn-round-full" data-toggle="modal" data-target="#modalTeamName">Contact</button>
+                    <button type="button" class="btn btn-solid-border btn-round-full" data-toggle="modal" data-target="#modalTeamName">Team</button>
                 </form>
             </div>
 
@@ -99,15 +99,15 @@
                             <span class="text-color">Kirim Pesan</span>
                             <h3 class="text md mb-4">Form Kontak</h3>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <input type="text" class="form-control" placeholder="Your Name" id="nameForm">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your E-Mail">
+                                <input type="email" class="form-control" placeholder="Your E-Mail" id="emailForm">
                             </div>
                             <div class="form-group-2 mb-4">
-                                <textarea name="message" class="form-control" rows="4" placeholder="Pesan Anda"></textarea>
+                                <textarea name="message" class="form-control" rows="4" placeholder="Pesan Anda" id="messageForm"></textarea>
                             </div>
-                            <button class="btn btn-main" type="button">Kirim</button>
+                            <button class="btn btn-main" type="button" onclick="clearForm()">Kirim</button>
                         </div>
                     </div>
                 </form>
@@ -259,6 +259,16 @@
 <!-- Bootstrap 4.3.1 -->
 <script src="plugins/bootstrap/js/popper.js"></script>
 <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<script>
+
+    function clearForm() {
+        $("#nameForm").val('')
+        $("#emailForm").val('')
+        $("#messageForm").val('')
+    }
+
+</script>
 
 </body>
 </html>
